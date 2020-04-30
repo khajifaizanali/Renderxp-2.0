@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome </title>
+	<link rel="shortcut icon" href="img/weblogo.png"/>
+<link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <style type="text/css">
+         .Navbar {
+  background-color:  #ffffff;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: black;
+}
+.Navbar__Link-brand{
+  margin-left: 17%;
+
+}
+.Navbar__Link {
+
+  padding-right: 8px;
+}
+
+.Navbar__Items {
+   color:#80aaff;
+  display: flex;
+}
+a{
+  text-decoration: none;
+ }
+a:hover{
+  color: #ff0000;
+}
+.Navbar__Items--right {
+  margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .howle{
+          display: none;
+        }
+.Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+    
+.Navbar__Items {
+    display:none;
+  }
+    .Navbar__Link-brand{
+  margin-left: 25%;
+  margin-right: 30%;
+}
+.Navbar__Items--right {
+    margin-left:0;
+  }
+    
+.Navbar__ToggleShow {
+  background-color:  #ffff00;
+    color:#80aaff;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    display: flex;
+  }
+  .Navbar__ToggleShow1 {
+background-color:  #ffff00;
+  }  
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+   .glyphicon {
+    font-size: 25px;
+}
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.video {
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  display: block;
+ opacity: 1;
+  /*transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;*/
+  max-width: 1500px;
+  max-height: 720px;
+  width: 100%;
+ will-change: transform, opacity;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(199, 198, 195,0.2);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.inline-photo {
+  /*border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);*/
+  margin: 1em auto;
+  margin-left: 10px;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  max-width: 1500px;
+  max-height: 540px;
+  width: 100%;
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button3 {background-color: #008CBA;} /* Blue */
+.button2 {background-color: #f44336;} /* Red */ 
+
+        </style>
+    </head>
+ 
+    <body style="padding-top: 0px;">
+   <div class="Navbar">
+     <div class="howle">
+       <nav class="Navbar__Items" style="font-size:18px;padding:10px;">
+        <a href="" style="text-decoration: none;">
+    <div class="Navbar__Link" style="padding-top: 90px; padding-left: 20%; width:400px;">
+      GJ0001
+    </div>
+  </a>
+  </nav>
+</div>
+   <div class="Navbar__Link Navbar__Link-brand">
+    <a href="index.html">
+      <img id="logo-main" src="brandlogo.png" width="175" height="175" alt="Logo Thing main logo">
+    </a>
+    </div>
+    <div class="Navbar__Link Navbar__Link-toggle" style="padding-top: 70px;">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </div>
+ <!-- <nav class="Navbar__Items">
+    <div class="Navbar__Link">
+      Longer Link
+    </div>
+    <div class="Navbar__Link">
+      Longer Link
+    </div>
+    <div class="Navbar__Link">
+      Link
+    </div>
+  </nav>  -->
+  <nav class="Navbar__Items Navbar__Items--right" style="font-size:20px;padding: 10px;margin-left: 10%;">
+    <div class="Navbar__Link" style="padding-top: 90px; padding-right: 20px;">
+      <a href="https://www.instagram.com/renderxp/"style="text-decoration: none;">Instagram</a>
+    </div>
+    <div class="Navbar__Link" style="padding-top: 90px; padding-right: 20px;">
+      <a href="https://www.behance.net/RenderXP" style="text-decoration: none;">Behance</a>
+    </div>
+    <div class="Navbar__Link" style="padding-top: 90px; padding-right: 20px;">
+      <a href="https://dribbble.com/" style="text-decoration: none;">Dribble</a>
+    </div>
+    <div class="Navbar__Link" style="padding-top: 90px; padding-right: 20px;">
+      <a href="about.html" style="text-decoration: none;">About</a>
+    </div>
+  </nav>
+
+</div>
+<div style="margin-left:10%;margin-right: 10%;display: block;overflow: auto;">
+  <img src="about_img.jpg" width="300" height="500" style="float:left;margin-right: 10%;">
+  <p style=" margin:10%;" >
+    <h2>ABOUT</h2><br>
+Hi,my name is JASWANTH i'm a freelance MOGRAPH DESIGNER<br> passionate about creating unique artwork for the web,television or films..etc<br>
+since 2015.I am working as contactual project based hiring globally.
+  </p>
+</div>
+</div>
+<footer style="background-color: white;">
+  <center style=" padding: 3%;">
+    <a href="https://dribbble.com/">
+    <img src="001-dribbble.png" width="30px;" height="30px;" style="margin-left:10px;">
+  </a>
+<a href="jaswanthgavvala878@gmail.com">
+    <img src="002-email.png" width="30px;" height="30px;" style="margin-left:10px;">
+  </a>
+  <a href="https://www.instagram.com/renderxp/">
+    <img src="003-instagram.png" width="30px;" height="30px;" style="margin-left:10px;">
+  </a>
+  <a href="https://www.behance.net/RenderXP">
+    <img src="004-behance.png" width="30px;" height="30px;"style="margin-left:10px;">
+  </a>
+  </center>
+</footer>
+</body>
+</html>
